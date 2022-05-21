@@ -24,7 +24,7 @@ func Init() error {
 	addr = os.Getenv("MYSQL_ADDRESS")
 	dataBase = os.Getenv("MYSQL_DATABASE")
 	if dataBase == "" {
-		dataBase = "ifly"
+		dataBase = "wxcomponent"
 	}
 	tcp := "tcp"
 	source := "%s:%s@" + tcp + "(%s)/%s?readTimeout=1500ms&writeTimeout=1500ms&charset=utf8&loc=Local&&parseTime=true"
